@@ -1,0 +1,3 @@
+<<?=$type?> class="docs-list type-<?=$type?> <?=$cssclass?>">
+	<?=$content_parsed?>
+</<?=$type?>>

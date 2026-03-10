@@ -1,0 +1,1 @@
+DEPRECATED EXAMPLE SRC BLOCK<div class="example-src"><?=$content?></div>

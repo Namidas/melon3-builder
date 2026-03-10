@@ -1,0 +1,1 @@
+<code class="docs-code <?php if($params['lang'] !== false) { ?>language-<?=$params['lang']?><?php } ?> <?=$cssclass?>" <?php if($params['lang'] !== false) { ?>data-highlight="<?=$params['lang']?>"<?php } ?>><?=$content_parsed?></code>

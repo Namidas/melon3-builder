@@ -1,0 +1,1 @@
+<b><?=$content_parsed?></b>
