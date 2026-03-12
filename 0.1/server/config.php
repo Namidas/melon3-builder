@@ -1,28 +1,21 @@
 <?php
 
-//require_once(dirname(__FILE__) . '/functions.php');
-
 define('_PRODUCTION_',false);
 
-// google application credentials
-//$google_credentials_path = 'Z:/Namida/_credentials/google_oauth.json';
-//putenv("GOOGLE_APPLICATION_CREDENTIALS={$google_credentials_path}");
-
 $_MELON_VERSION = '3.0.8.2.8';
-$_PROJECT_TITLE = 'ChotGPT';
-$_PROJECT_NAME = "melon3.chotgpt";
+$_PROJECT_TITLE = 'Melon3 builder';
+$_PROJECT_NAME = 'melon3.builder';
 
-$_BASE_URL = 'https://5.189.139.187/~azutgcd/demos/ChotGPT/';
-$_BASE_URL = 'http://localhost/Namida/ChotGPT/';
+$_BASE_URL = 'http://localhost/Namida/melon3_builder/0.1/server/';
 
 $projectBasePath = dirname(__FILE__) . '/';
-$_JWT_SECRET_KEY = 'melon3-chotgpt';
-$pathPrefix = constant('_PRODUCTION_') ? '/home/azutgcd/' : 'Z:/Namida/';
+$_JWT_SECRET_KEY = 'melon3-builder';
+$pathPrefix = constant('_PRODUCTION_') ? '/' : 'Z:/Namida/';
 $_MELON3_BASEPATH = "{$pathPrefix}melon3/{$_MELON_VERSION}/";
 
 $_PATHS = Array(
 	'base' => $projectBasePath,	
-	'melon' => __DIR__ . '/../../melon_custom/', //"{$_MELON3_BASEPATH}sys/",
+	'melon' => __DIR__ . '/../../melon_custom/',
 	'client' => Array(
 		"{$_MELON3_BASEPATH}client/#{current_client_name}/",
 		"{$projectBasePath}client/#{current_client_name}/",
@@ -42,18 +35,14 @@ $_PATHS = Array(
 	
 	//these are used globally (and below you can define client-specific on 'render_engine'
 	'templates' => Array(
-		//estos estaban alverre ? **PROBARRRRR
 		"{$_MELON3_BASEPATH}templates/client/#{current_client_name}/",
 		"{$projectBasePath}templates/client/#{current_client_name}/",
 	),
 	
 	//these are used globally (and below you can define client-specific on 'render_engine'
 	'lang' => Array(
-		//estos estaban alverre ? **PROBARRRRR
 		"{$_MELON3_BASEPATH}lang/",
-		//"{$_MELON3_BASEPATH}lang/client/#{current_client_name}/",
 		"{$projectBasePath}lang/",
-		//"{$projectBasePath}templates/client/#{current_client_name}/",
 	),
 	
 	'media' => "{$projectBasePath}media/",
@@ -64,9 +53,9 @@ $_SQL_TABLE_PREFIX = '';
 $_DBS = Array(
 	'default' => constant('_PRODUCTION_') ? Array(
 		'host' => 'localhost',
-		'user' => 'grawita_demos',
-		'pass' => 'bywwi6cb5OQf',
-		'db_name' => 'grawita_chotgpt',
+		'user' => '',
+		'pass' => '',
+		'db_name' => '',
 	) : Array(
 		'host' => 'localhost',
 		'user' => 'root',

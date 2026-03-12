@@ -16,7 +16,7 @@ At first I thought of using a different tech (keep in mind, that I was thinking 
 
 I was quite certain that PHP had configurations for changing opening and closing tags, so the idea is I would just use raw PHP to do whatever (even inside PHP scripts) but tagged with a different specific tag that only this builder would recognize...of course, that wasn't the case, you can't change/config those tags, but you know which other tech I have over 20 years of experience with and I knew for sure that would allow me to config it's tags (just to not visually break code)?...that's right, Smarty, the template engine for PHP.
 
-So that's that...essentially this **builder is a melon3 project itself** but comes packed with it's own dist since it's used to actually build the framework itself. It's pure raw PHP that uses Smarty as it's main engine to parse files (which, if you know Smarty, you know the possibilities are essentially endless), packed with default custom extensions aimed specifically to generating documentation.
+So that's that...essentially this **builder is a melon3 project itself** but comes packed with it's own dist since it's (also) used to actually build the framework itself. It's pure raw PHP that uses Smarty as it's main engine to parse files (which, if you know Smarty, you know the possibilities are essentially endless), packed with default custom extensions aimed specifically to generating documentation.
 
 ## About this repository
 You have 2 root foolders, `0.1` and `melon_custom`, the latter is of course a pre-built *melon3* and `0.1` holds the actual "thing" (yeah, that's just how I'm used to organize my code, I'm old school, get over it).
